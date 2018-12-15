@@ -21,7 +21,6 @@
   "author": "Alex Mextner <invntrm@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "load-styles": "^2.0.0",
     "postcss": "^6.0.19",
     "postcss-icss-selectors": "^2.0.3",
     "postcss-modules-extract-imports": "^1.1.0",
@@ -34,9 +33,11 @@
     "babel-generator": "6.x",
     "babel-template": "6.x",
     "babel-types": "6.x",
-    "babel": "6.x"
+    "babel": "6.x",
+    "style-from-string": "^1.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.3.1",
     "babel-cli": "^6.9.0",
     "babel-eslint": "^8.2.2",
     "babel-generator": "^6.26.1",
@@ -44,7 +45,8 @@
     "babel-types": "^6.26.0",
     "eslint-plugin-immutable": "^1.0.0",
     "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "postcss-nested": "^4.1.0"
   },
   "engines": {
     "node": ">=8.x"

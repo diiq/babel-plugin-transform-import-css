@@ -1,6 +1,4 @@
 const genericNames = require('generic-names');
-// const globToRegex = require('glob-to-regexp')
-// const validate = require('./validate')
 const path = require('path');
 const fs = require('fs');
 
@@ -15,7 +13,6 @@ const PWD = process.cwd();
 
 module.exports = {
   process (css, fromSrc, options) {
-    // TODO: load options, plugins from .postcssrc / postcss.config.js
     const { plugins, ...configOptions } = loadConfig();
     const runner = postcss(getPlugins(plugins, options));
     const lazyResult = runner.process(css, { ...configOptions, ...options, map: false, from: fromSrc });
